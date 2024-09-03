@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.slider-container{
+    overflow: hidden;
+}
+
+.active{
+    position: relative;
+}
+
+.active::after{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: .2rem;
+    background-color: #fff;
+}

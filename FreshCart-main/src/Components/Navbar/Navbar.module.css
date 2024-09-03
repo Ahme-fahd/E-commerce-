@@ -1,0 +1,25 @@
+.navbar {
+    /* Add this to make the navbar responsive */
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .navbar .flex {
+    /* Add this to make the flex items wrap */
+    flex-wrap: wrap;
+  }
+  
+  .navbar .dark-mode-icon {
+    /* Add this to make the dark mode icon not overflow */
+    margin-right: 10px; /* adjust the value to your liking */
+  }
+  
+  /* Add a media query to fix the issue at 840px */
+  @media (max-width: 840px) {
+    .navbar .dark-mode-icon {
+      /* Make the dark mode icon smaller or hide it at 840px */
+      font-size: 18px; /* adjust the value to your liking */
+      /* or */
+      display: none;
+    }
+  }

@@ -1,0 +1,36 @@
+.loader{
+    height: 100vh;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    -webkit-box-reflect: below -25px linear-gradient(transparent,#0005);
+}
+.loader span{
+    position: relative;
+    -webkit-text-stroke: 1px #000;
+    display: inline-flex;
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: transparent;
+    animation: bounce 2s ease-in-out infinite;
+    animation-delay: calc(0.15s * var(--i));
+}
+
+@keyframes bounce {
+    0%{
+        transform: translateY(0);
+        color: transparent;
+        text-shadow: none;
+    }
+    20%{
+        transform: translateY(-60px);
+        color: #000;
+        text-shadow: 0 0 5px #000, 0 0 25px #000, 0 0 50px #000;
+    }
+    40%,100%{
+        transform: translateY(0);
+        color: transparent;
+        text-shadow: none;
+    }
+}
