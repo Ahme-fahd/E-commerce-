@@ -1,5 +1,5 @@
 import './App.css';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createBrowserRouter, createHashRouter, RouterProvider } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
 
 import Home from './pages/Home/Home';
@@ -29,7 +29,7 @@ import Profile from './pages/Profile/Profile';
 import UserProvider from './context/userContext';
 
 function App() {
-  const router = createBrowserRouter([
+  const router = createHashRouter([
     {
       path: '/',
       element: <Layout />,
